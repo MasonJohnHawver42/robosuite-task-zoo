@@ -19,15 +19,14 @@ setup(
     install_requires=[
         "numpy>=1.13.3",
         "numba>=0.49.1",
-        "scipy>=1.2.3",
-        "mujoco-py>=2.0.2.9",
+        "scipy>=1.2.3"
     ],
     eager_resources=['*'],
     include_package_data=True,
     python_requires='>=3',
     description="robosuite task zoo",
     author="Yuke Zhu",
-    url="https://github.com/ARISE-Initiative/robosuite-task-zoo",
+    url="https://github.com/MasonJohnHawver42/robosuite-task-zoo.git",
     author_email="yukez@cs.utexas.edu",
     version="0.1",
     long_description=long_description,
