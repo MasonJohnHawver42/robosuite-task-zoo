@@ -44,6 +44,7 @@ class HammerPlaceEnv(SingleArmEnv):
         camera_heights=256,
         camera_widths=256,
         camera_depths=False,
+        camera_segmentations=None,  # {None, instance, class, element}
         contact_threshold=2.0
     ):
         # settings for table top (hardcoded since it's not an essential part of the environment)
@@ -95,6 +96,7 @@ class HammerPlaceEnv(SingleArmEnv):
             camera_heights=camera_heights,
             camera_widths=camera_widths,
             camera_depths=camera_depths,
+            camera_segmentations=camera_segmentations,
         )
 
     def reward(self, action=None):
